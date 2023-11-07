@@ -22,8 +22,6 @@ def get_word_count(book):
 
 def get_letter_count(text, letter_dict):
     for index, letter in enumerate(text):
-        if letter not re.match([A-Za-z]):
-            continue
         if letter not in letter_dict:
            letter_dict.setdefault(letter.lower(), 1)
         if letter in letter_dict:
